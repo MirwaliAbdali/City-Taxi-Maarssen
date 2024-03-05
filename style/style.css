@@ -1,0 +1,1136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: arial;
+}
+header {
+  background-image: url(../images/headerbg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: -20px 0 0;
+  padding-right: 20px;
+  height: 150px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 90;
+}
+
+.hide {
+  background-color: #000;
+  transform: translateY(-100px);
+  transition: 0.9s;
+  height: 130px;
+}
+
+.logo {
+  width: 12rem;
+  margin-top: -1rem;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-right ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  text-transform: uppercase;
+  gap: 5px;
+}
+.navbar .nav-right ul a {
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem 0.5rem;
+}
+
+.navbar .nav-right ul a:hover {
+  background-color: #ffc61a;
+  border-style: none;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  color: black;
+  transition: all 0.9s;
+}
+
+.navbar .nav-right ul .active {
+  background-color: #ffc61a;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  color: black;
+}
+
+/*  */
+.header-bottom {
+  text-align: center;
+  padding: 45px;
+}
+.header-book {
+  margin-top: 150px;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 24px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-out;
+}
+
+.header-phone {
+  font-size: 64px;
+  color: #ffc61a;
+  font-weight: bold;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in;
+}
+
+.header-website a:link {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+.header-img {
+  max-width: 52%;
+  margin-top: 4rem;
+  animation-name: fullUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+/* HOME PART  */
+
+.home {
+  background-color: #ffc61a;
+  padding: 150px 64px 64px;
+}
+/* HOME BOTTOM */
+.home-btm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.home-btm-left {
+  width: 45%;
+  color: black;
+}
+.best {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation-name: moveInRight;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+}
+.trust {
+  font-weight: 500;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+}
+.info {
+  font-size: 18px;
+  margin-bottom: 60px;
+  animation-name: toUp;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+}
+.best-btn {
+  border-style: none;
+  padding: 15px 35px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  animation-name: moveInRight;
+  animation-duration: 2.2s;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+}
+.best-btn:hover {
+  background-color: orangered;
+  transition: 0.9s;
+}
+
+.map {
+  border-radius: 10px;
+  animation-name: fullUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+}
+
+/* TARIIFFS */
+
+.tariffs {
+  padding: 5rem 3rem;
+  text-align: center;
+  background-color: white;
+}
+.tariffs .our-header {
+  font-size: 44px;
+  color: #ffc61a;
+  text-transform: uppercase;
+  animation-name: moveInRight;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
+}
+.tariffs .tariffs-header {
+  text-transform: uppercase;
+  font-size: 54px;
+  color: #000;
+  margin-bottom: 150px;
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 75px;
+}
+.tariffs-card {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 4rem 2rem 2rem;
+  color: #000;
+  box-shadow: 5px 30px 35px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  position: relative;
+  animation-name: fullUp;
+  animation-duration: 1.5s;
+  animation-delay: 5s;
+  animation-timing-function: ease-out;
+}
+.tariffs-card:hover {
+  background-color: #ffc61a;
+  transition: 0.9s;
+}
+
+.tariffs-card:hover .readmore {
+  background-color: #010101;
+  color: white;
+  transition: ease-out 0.9s;
+}
+
+.star-con {
+  background-color: #000;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  display: none;
+}
+
+.star {
+  position: absolute;
+  bottom: 8px;
+  border-radius: 50%;
+  width: 32px;
+}
+
+.tariffs-card:hover .star-con {
+  display: block;
+  transition: 2s;
+}
+.card-img {
+  max-width: 100%;
+  margin-top: -120px;
+  margin-bottom: 25px;
+}
+.card-title {
+  font-size: 28px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.card-detail {
+  font-size: 16px;
+  margin-bottom: 50px;
+  color: #010101;
+}
+.card-price {
+  font-size: 42px;
+  color: #ffc61a;
+  margin-bottom: 50px;
+}
+
+.tariffs-card:hover .card-price {
+  color: #000;
+  transition: 0.3s;
+}
+.readmore {
+  text-decoration: none;
+  background-color: #ffc61a;
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* SERVICES PART */
+.services {
+  background-image: url(../images/lought.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.best-title {
+  font-size: 35px;
+  color: #ffc61a;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.wish-title {
+  font-size: 42px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.services-container {
+  text-align: center;
+  padding: 100px;
+}
+.services-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 85px;
+  row-gap: 85px;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.services-card-container .services-card {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.services-card-circle img {
+  background-color: #ffc61a;
+  padding: 15px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.card-body-title {
+  text-align: left;
+  font-size: 25px;
+  color: #ffc61a;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.card-body-content {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: left;
+}
+.services-readmore {
+  text-decoration: none;
+  background-color: #ffc61a;
+  padding: 20px 35px;
+  border-radius: 15px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.services-readmore:hover {
+  border-style: none;
+  color: black;
+  font-weight: bold;
+  background-color: orangered;
+  transition: ease-in-out 0.9s;
+}
+
+/* BOOK A CAR PART  */
+
+.book-car {
+  padding: 24px;
+  background-color: #e4c051;
+  color: #000;
+}
+
+.book-car-img {
+  width: 100%;
+}
+
+.form-div {
+  background-color: transparent;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.book-car .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lets-start {
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.lets-start-q {
+  text-align: center;
+  color: rgb(96, 96, 96);
+}
+
+.trip-type {
+  align-self: flex-start;
+}
+
+.trip-type h2 {
+  margin-bottom: 12px;
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-con {
+  display: flex;
+  gap: 44px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.credational {
+  margin-top: 16px;
+}
+
+.gender-drop-down {
+  width: 100px;
+  height: 42px;
+  border-radius: 5px;
+}
+.first {
+  margin: 0 10px 15px;
+}
+.name {
+  width: 216px;
+  height: 42px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.general {
+  width: 260px;
+  height: 42px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.general::placeholder {
+  font-size: 14px;
+}
+.pax-info {
+  width: 106px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.drop-down {
+  width: 110px;
+  height: 40px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+}
+
+.name,
+.general,
+.gender-drop-down,
+.pax-info,
+.drop-down {
+  outline: none;
+  border-style: none;
+}
+
+.text-area-title {
+  margin-bottom: 14px;
+}
+.text-area {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  outline: none;
+  font-size: 12px;
+}
+
+.accept {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.submit {
+  width: 25%;
+  background-color: #000;
+  color: #fff;
+}
+label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* TESTIMONAILS PART */
+.testimonails {
+  text-align: center;
+  padding: 110px 85px;
+  background-image: url(../images/clientsbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.clients-title {
+  font-size: 35px;
+  color: #ffc61a;
+  text-transform: uppercase;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-timing-function: ease-out;
+}
+.clients-subtitle {
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-bottom: 132px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-delay: 6s;
+  animation-timing-function: ease-out;
+}
+.clients-row {
+  display: grid;
+  justify-content: space-around;
+  column-gap: 100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.clients-reviews {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 60px 42px;
+  border-radius: 20px;
+  animation-name: fullUp;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+  animation-timing-function: ease-out;
+}
+.review-author {
+  display: flex;
+  gap: 20px;
+  text-align: left;
+}
+.review-text {
+  text-align: left;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.review-name {
+  font-size: 25px;
+  color: #ffc61a;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 9px;
+}
+.review-job {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.review-img {
+  object-fit: cover;
+}
+
+/* ///////////////////////////// */
+
+/* CONTACT PART */
+
+.number {
+  background-color: #ffc61a;
+  text-align: center;
+  padding: 100px;
+}
+
+.number-title {
+  font-size: 35px;
+  color: #000;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.number-tel {
+  text-decoration: none;
+  font-size: 76px;
+  color: orangered;
+  font-weight: bold;
+}
+
+.number-tel:hover {
+  color: #000;
+  transition: ease-out 0.9s;
+}
+
+/* ////////////////////////////////// */
+
+/* FOOTER PART */
+.footer-container {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.2rem;
+}
+
+.footer-title::after {
+  content: "";
+  height: 8px;
+  width: 80%;
+  background-color: #ffc61a;
+  display: block;
+  margin-top: 30px;
+}
+
+.footer-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.svg-icon {
+  fill: #ffc61a;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.svg-icon,
+.android-icon,
+.location-icon,
+.phone-icon,
+.email-icon {
+  width: 30px;
+  height: 30px;
+}
+.android-user {
+  color: #ffc61a;
+  font-size: 22px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: orangered;
+  transition: 0.9s;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.inptHide {
+  display: none;
+}
+
+/* /////////////////////////////////////////////////// */
+
+/* ANIMATION PART */
+
+@keyframes fullUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  */
+@keyframes toUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15rem);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateY(11rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  */
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*  */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* RESPONSIVENESS OF THE WEBSITE */
+
+@media screen and (max-width: 1135px) {
+  header {
+    height: 46rem;
+  }
+
+  .header-img {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    height: 45rem;
+  }
+
+  .header-img {
+    max-width: 60%;
+  }
+
+  /* HOME */
+  .home {
+    padding: 100px 15px 75px 15px;
+  }
+
+  .home-btm {
+    gap: 24px;
+  }
+
+  .home-btm-left {
+    width: 50%;
+  }
+
+  .best {
+    font-size: 25px;
+  }
+  .trust {
+    font-size: 30px;
+  }
+
+  .home-btm-right {
+    width: 50%;
+  }
+  .map {
+    width: 400px;
+  }
+
+  .nav-right ul {
+    display: none;
+  }
+  .bar-icon {
+    position: absolute;
+    top: 45px;
+    right: 52px;
+    height: 35px;
+    display: inline-block;
+    cursor: pointer;
+    align-self: flex-end;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .bar-icon {
+    background-image: url(../images/bars-solid.svg);
+    background-repeat: no-repeat;
+  }
+
+  .cross-icon {
+    background-image: url(../images/xmark-solid.svg);
+  }
+
+  .nav-right {
+    position: relative;
+    top: 35px;
+    background: transparent;
+    transition: 0.6s;
+    flex-direction: column;
+  }
+
+  .nav-right.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 44;
+    width: 75%;
+    height: 100vh;
+    background-color: #000;
+    padding-left: 25px;
+    transition: 0.8s;
+  }
+
+  .nav-right.active ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    transition: 0.5s;
+    opacity: 0;
+    text-align: left;
+  }
+
+  .nav-right ul li {
+    margin-bottom: 120px;
+  }
+
+  .nav-right.active ul {
+    opacity: 1;
+  }
+
+  /* TRIFFS */
+  .card-container {
+    grid-gap: 20px;
+  }
+
+  .tariffs {
+    padding: 5rem 1rem;
+  }
+
+  .card-title,
+  .card-detail,
+  .card-price {
+    margin-bottom: 30px;
+  }
+
+  .tariffs-card {
+    padding-bottom: 3rem;
+  }
+
+  .tariffs .tariffs-header {
+    margin-bottom: 58px;
+  }
+
+  /* SERVICES */
+
+  .services-container {
+    padding: 25px;
+  }
+
+  /* BOOK A CAR */
+  .book-car .container {
+    flex-direction: column;
+  }
+
+  .book-car-img {
+    display: none;
+  }
+
+  .book-car-left {
+    margin-bottom: 35px;
+  }
+
+  /* CLIENATS TESTIMONAILS */
+  .clients-row {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+  }
+  .clients-reviews {
+    margin-bottom: 35px;
+  }
+
+  /* FOOTER PART */
+  .footer-container {
+    padding: 35px 10px;
+  }
+
+  .review-text {
+    font-size: 16px;
+  }
+
+  .services-container .services-card-container {
+    column-gap: 35px;
+    row-gap: 25px;
+  }
+
+  .card-body-title {
+    font-size: 18px;
+  }
+
+  .card-body-content {
+    font-size: 16px;
+  }
+}
+
+/* ----------------------------- */
+
+@media screen and (max-width: 770px) {
+  header {
+    height: 38rem;
+  }
+
+  .header-img {
+    margin-top: 5rem;
+  }
+
+  /* HOME */
+
+  .home-btm {
+    flex-direction: column;
+  }
+
+  .home-btm-left {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .best {
+    margin-bottom: 10px;
+  }
+  .trust {
+    margin-bottom: 20px;
+  }
+
+  .info {
+    margin-bottom: 24px;
+  }
+
+  .home-btm-right {
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  /* TERRIFS */
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 32px;
+  }
+
+  .tariffs-card {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  header {
+    height: 28rem;
+  }
+
+  .header-img {
+    margin-top: 2rem;
+  }
+
+  .navbar {
+    height: 110px;
+  }
+
+  .bar-icon {
+    top: 20px;
+    right: 24px;
+  }
+
+  .logo {
+    width: 8rem;
+    margin: 0;
+  }
+
+  .header-book {
+    font-size: 24px;
+  }
+  .header-phone {
+    font-size: 35px;
+  }
+  .header-img {
+    max-width: 80%;
+  }
+
+  /* TERRIFS */
+
+  .tariffs {
+    padding: 1rem;
+  }
+
+  /* SERVICES */
+  .services-container {
+    margin-bottom: 35px;
+  }
+  .services-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .best-title {
+    font-size: 22px;
+  }
+  .wish-title {
+    font-size: 28px;
+    margin-bottom: 62px;
+  }
+  /* BOOK A CAR */
+
+  .lets-start {
+    font-size: 32px;
+  }
+
+  .gender-drop-down {
+    width: 72px;
+  }
+
+  .name {
+    width: 110px;
+  }
+  .general {
+    width: 140px;
+  }
+  .pax-info {
+    width: 40px;
+  }
+  .drop-down {
+    width: 52px;
+  }
+
+  .text-area {
+    width: 330px;
+  }
+
+  .submit {
+    width: 140px;
+  }
+
+  /* CLIENATS TESTIMONAILS */
+  .testimonails {
+    padding: 42px 32px;
+  }
+
+  .clients-reviews {
+    padding: 42px 22px;
+  }
+  .clients-title {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+  .clients-subtitle {
+    font-size: 30px;
+    margin-bottom: 44px;
+  }
+
+  .review-text {
+    font-size: 14px;
+  }
+
+  .review-name {
+    font-size: 20px;
+  }
+
+  .review-job {
+    font-size: 16px;
+  }
+  /* CONTACT */
+  .number {
+    padding: 24px;
+  }
+
+  .number-title {
+    font-size: 20px;
+  }
+  .number-tel {
+    font-size: 28px;
+  }
+
+  /* FOOTER */
+
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 24px;
+  }
+
+  .footer-title::after {
+    width: 95%;
+  }
+}
